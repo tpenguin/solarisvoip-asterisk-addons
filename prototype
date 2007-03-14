@@ -1,0 +1,13 @@
+i pkginfo
+d none opt ? ? ?
+d none opt/asterisk 0755 root root
+d none opt/asterisk/lib 0755 root root
+d none opt/asterisk/lib/modules 0755 root root
+f none opt/asterisk/lib/modules/res_config_mysql.so=res_config_mysql.so 0755 root root
+f none opt/asterisk/lib/modules/cdr_addon_mysql.so=cdr_addon_mysql.so 0755 root root
+f none opt/asterisk/lib/modules/format_mp3.so=format_mp3/format_mp3.so 0755 root root
+d none etc ? ? ?
+d none etc/opt ? ? ?
+d none etc/opt/asterisk 0755 root root
+e preserve etc/opt/asterisk/res_mysql.conf=configs/res_mysql.conf.sample 0644 root root
+e preserve etc/opt/asterisk/cdr_mysql.conf=configs/cdr_mysql.conf.sample 0644 root root

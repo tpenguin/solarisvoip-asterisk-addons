@@ -1,0 +1,28 @@
+res_sqlite for SQLite3
+Anthony Minessale <anthmct@yahoo.com>
+
+Improvements include new db engine and the auto-creation of some tables
+along with a few cleanups.
+
+to upgrade from the old res_sqlite (assuming each step works or forget it.)
+
+make
+make upgrade
+make install
+
+*NOTE* once you make upgrade all your data will be converted to sqlite3 format 
+forever.
+
+res_sqlite can be 
+
+A real-time sqlite dialplan switch
+A sqlite driven config handler
+A sqlite cdr_handler
+A Dialplan based SQL interaction system
+
+
+
+
+
+
+

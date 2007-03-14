@@ -1,0 +1,181 @@
+2006-10-17 Kevin P. Fleming <kpfleming@digium.com>
+
+	* Asterisk-Addons 1.2.5 released.
+	
+2006-09-21 21:17 +0000 [r305-307]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/ooh323c/src/ooLogChan.c,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.c: added additional
+	  trace message to find channel compare problem
+
+	* asterisk-ooh323c/ChangeLog: log update
+
+2006-09-11 17:29 +0000 [r293-294]  Anthony LaMantia <alamantia@digium.com>
+
+
+	* asterisk-ooh323c/src/chan_h323.c: small hangup update for 1.2
+	  branch re:7464
+
+2006-08-22 Kevin P. Fleming <kpfleming@digium.com>
+
+	* Asterisk-Addons 1.2.4 released.
+	
+2006-08-08 15:35 +0000 [r271-273]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/ChangeLog: update for Flagman patch
+
+	* asterisk-ooh323c/ooh323c/src/h323/H235-SECURITY-MESSAGESEnc.c,
+	  asterisk-ooh323c/ooh323c/src/h323/H323-MESSAGES.c,
+	  asterisk-ooh323c/ooh323c/src/h323/MULTIMEDIA-SYSTEM-CONTROLDec.c,
+	  asterisk-ooh323c/ooh323c/src/h323/H235-SECURITY-MESSAGESDec.c,
+	  asterisk-ooh323c/ooh323c/src/h323/H323-MESSAGES.h,
+	  asterisk-ooh323c/ooh323c/src/h323/H323-MESSAGESEnc.c,
+	  asterisk-ooh323c/ooh323c/src/h323/MULTIMEDIA-SYSTEM-CONTROL.c,
+	  asterisk-ooh323c/ooh323c/src/h323/MULTIMEDIA-SYSTEM-CONTROL.h,
+	  asterisk-ooh323c/ooh323c/src/h323/H235-SECURITY-MESSAGES.h,
+	  asterisk-ooh323c/ooh323c/src/h323/H323-MESSAGESDec.c,
+	  asterisk-ooh323c/ooh323c/src/h323/MULTIMEDIA-SYSTEM-CONTROLEnc.c,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.c: update
+
+	* asterisk-ooh323c/src/chan_h323.c: Fix for call transfer crash
+	  caused by change in ownership
+
+2006-08-04 22:01 +0000 [r268-270]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ootypes.h,
+	  asterisk-ooh323c/src/chan_h323.c: Fix for reload problem of
+	  faststart, tunneling, mediawaitforconnect flags
+
+	* asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ooasn1.h,
+	  asterisk-ooh323c/src/chan_h323.c,
+	  asterisk-ooh323c/ooh323c/src/ooq931.c: Fix for uint flag values,
+	  causing wrong behaviour of ooh323c
+
+	* asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.c,
+	  asterisk-ooh323c/config.h, asterisk-ooh323c/README,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.h,
+	  asterisk-ooh323c/ooh323c/src/ootypes.h,
+	  asterisk-ooh323c/src/chan_h323.c,
+	  asterisk-ooh323c/ooh323c/src/ooq931.c,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.c: 1.2 branch update for
+	  media wait for connect, fast start reply in ALERTING
+
+2006-07-23 08:53 +0000 [r264]  Tilghman Lesher <tilghman@mail.jeffandtilghman.com>
+
+	* res_config_mysql.c: Bug 7577 - SQL Injection attack possible
+
+2006-07-10 04:14 +0000 [r257-258]  Tilghman Lesher <tilghman@mail.jeffandtilghman.com>
+
+	* app_addon_sql_mysql.c: Revert previous change as it was not ready
+
+	* res_config_mysql.c, app_addon_sql_mysql.c: Bug 7410 - Fix mysql
+	  reconnection on mysql client version > 5.0.3
+
+2006-05-31 16:50 +0000 [r217]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/ooh323c/src/ooh245.c,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.h,
+	  asterisk-ooh323c/aclocal.m4, asterisk-ooh323c/src/chan_h323.c,
+	  asterisk-ooh323c/ooh323c/src/oochannels.c,
+	  asterisk-ooh323c/configure,
+	  asterisk-ooh323c/ooh323c/src/ooCmdChannel.c,
+	  asterisk-ooh323c/Makefile.in,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.c,
+	  asterisk-ooh323c/configure.in, asterisk-ooh323c/ChangeLog,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.c, asterisk-ooh323c/README,
+	  asterisk-ooh323c/config/config.guess,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.h,
+	  asterisk-ooh323c/config/config.sub,
+	  asterisk-ooh323c/config/ltmain.sh,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.c: Changes from trunk
+	  brach
+
+2006-06-01 Kevin P. Fleming <kpfleming@digium.com>
+
+	* Asterisk-Addons 1.2.3 released.
+	
+2006-05-31 16:50 +0000 [r217]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/ooh323c/src/ooh245.c,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.h,
+	  asterisk-ooh323c/aclocal.m4, asterisk-ooh323c/src/chan_h323.c,
+	  asterisk-ooh323c/ooh323c/src/oochannels.c,
+	  asterisk-ooh323c/configure,
+	  asterisk-ooh323c/ooh323c/src/ooCmdChannel.c,
+	  asterisk-ooh323c/Makefile.in,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.c,
+	  asterisk-ooh323c/configure.in, asterisk-ooh323c/ChangeLog,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.c, asterisk-ooh323c/README,
+	  asterisk-ooh323c/config/config.guess,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.h,
+	  asterisk-ooh323c/config/config.sub,
+	  asterisk-ooh323c/config/ltmain.sh,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.c: Changes from trunk
+	  branch
+
+2006-04-30 15:08 +0000 [r211-213]  Kevin P. Fleming <kpfleming@digium.com>
+
+	* asterisk-ooh323c/Makefile.am, asterisk-ooh323c/aclocal.m4,
+	  asterisk-ooh323c/config/config.guess, asterisk-ooh323c/configure,
+	  asterisk-ooh323c/Makefile.in, asterisk-ooh323c/config/config.sub,
+	  asterisk-ooh323c/config/ltmain.sh: use DESTDIR for installation
+	  update autotools output to latest tool versions
+
+	* format_mp3/Makefile: there is no need to supply -m64 for building
+	  on 64-bit systems
+
+2006-04-25 20:24 +0000 [r209]  Kevin P. Fleming <kpfleming@digium.com>
+
+	* app_addon_sql_mysql.c: use proper conditional for enabling
+	  logging
+
+2006-03-02 22:56 +0000 [r202]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/Makefile.am, asterisk-ooh323c/config.h,
+	  asterisk-ooh323c/configure, asterisk-ooh323c/Makefile.in,
+	  asterisk-ooh323c/configure.in: updates from trunk version
+
+2006-03-02 22:56 +0000 [r201-202]  Objective Systems <support@obj-sys.com>
+
+	* asterisk-ooh323c/Makefile.am, asterisk-ooh323c/config.h,
+	  asterisk-ooh323c/configure, asterisk-ooh323c/Makefile.in,
+	  asterisk-ooh323c/configure.in: updates from trunk version
+
+	* asterisk-ooh323c/ooh323c/src/ooh245.c,
+	  asterisk-ooh323c/ooh323c/src/ooTimer.h,
+	  asterisk-ooh323c/ooh323c/src/ooh245.h,
+	  asterisk-ooh323c/ooh323c/src/ooSocket.c,
+	  asterisk-ooh323c/src/chan_h323.c,
+	  asterisk-ooh323c/ooh323c/src/oochannels.c,
+	  asterisk-ooh323c/ooh323c/src/printHandler.c,
+	  asterisk-ooh323c/ooh323c/src/ooCmdChannel.c,
+	  asterisk-ooh323c/ooh323c/src/ooq931.c,
+	  asterisk-ooh323c/ooh323c/src/ooSocket.h,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.c,
+	  asterisk-ooh323c/ooh323c/src/ooUtils.c,
+	  asterisk-ooh323c/ChangeLog,
+	  asterisk-ooh323c/ooh323c/src/printHandler.h,
+	  asterisk-ooh323c/ooh323c/src/ooCalls.h,
+	  asterisk-ooh323c/ooh323c/src/ooUtils.h,
+	  asterisk-ooh323c/ooh323c/src/ooports.c,
+	  asterisk-ooh323c/src/ooh323cDriver.c,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.c,
+	  asterisk-ooh323c/ooh323c/src/eventHandler.c,
+	  asterisk-ooh323c/src/ooh323cDriver.h,
+	  asterisk-ooh323c/ooh323c/src/ooCapability.h,
+	  asterisk-ooh323c/ooh323c/src/ootrace.c,
+	  asterisk-ooh323c/ooh323c/src/ooGkClient.c,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.c,
+	  asterisk-ooh323c/ooh323c/src/ooGkClient.h,
+	  asterisk-ooh323c/README, asterisk-ooh323c/ooh323c/src/ootypes.h,
+	  asterisk-ooh323c/ooh323c/src/ooh323ep.h,
+	  asterisk-ooh323c/ooh323c/src/ooLogChan.c,
+	  asterisk-ooh323c/ooh323c/src/ooStackCmds.c,
+	  asterisk-ooh323c/ooh323c/src/ooh323.c,
+	  asterisk-ooh323c/ooh323c/src/ooTimer.c: trunk version changes
+
