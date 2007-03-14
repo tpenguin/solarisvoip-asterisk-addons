@@ -132,7 +132,7 @@ $(PKGARCHIVE):
 	test -d $@ || mkdir -p $@
 
 pkginfo:
-	sed -e 's/<version>/$(ASTERISKVERSIONNUM),REV=$(REV)/' pkginfo_src | \        sed -e 's/<arch>/$(ARCH)/' > $@
+	sed 's/<version>/$(ASTERISKVERSIONNUM),REV=$(REV)/' < pkginfo_src | sed 's/<arch>/$(ARCH)/' > $@
 
 svnver:
 	echo "asterisk-adonns-1.2.7.1-solvoip-`svn info | grep Revision | awk '{ print $$2 }'`" >.version
